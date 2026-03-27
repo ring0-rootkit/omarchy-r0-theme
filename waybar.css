@@ -1,0 +1,101 @@
+@define-color bg #0F0F1A;
+@define-color bg-alt #1A1A2E;
+@define-color fg #EDF2F4;
+@define-color fg-dim #8D99AE;
+@define-color accent #E5383B;
+@define-color accent-secondary #E76F8B;
+@define-color warning #FFD166;
+@define-color error #E5383B;
+@define-color success #95D5B2;
+@define-color blue #7EC8E3;
+@define-color purple #9B5DE5;
+@define-color border #2D2D4A;
+
+* {
+    font-family: "JetBrains Mono", "Symbols Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @bg;
+    color: @fg;
+    border-bottom: 2px solid @accent;
+}
+
+tooltip {
+    background-color: @bg-alt;
+    color: @fg;
+    border: 1px solid @accent;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    color: @fg-dim;
+    padding: 0 5px;
+    border-bottom: 2px solid transparent;
+}
+
+#workspaces button.active {
+    color: @accent;
+    border-bottom: 2px solid @accent;
+}
+
+#workspaces button.urgent {
+    color: @error;
+}
+
+#workspaces button:hover {
+    color: @accent-secondary;
+    background: transparent;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#backlight,
+#custom-power {
+    padding: 0 10px;
+    color: @fg;
+}
+
+#battery.charging {
+    color: @success;
+}
+
+#battery.warning:not(.charging) {
+    color: @warning;
+}
+
+#battery.critical:not(.charging) {
+    color: @error;
+}
+
+#clock {
+    color: @accent-secondary;
+    font-weight: bold;
+}
+
+#cpu {
+    color: @blue;
+}
+
+#memory {
+    color: @purple;
+}
+
+#network.disconnected {
+    color: @error;
+}
+
+#pulseaudio.muted {
+    color: @fg-dim;
+}
+
+#custom-power {
+    color: @accent;
+}

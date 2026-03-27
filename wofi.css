@@ -1,0 +1,50 @@
+@define-color bg #0F0F1A;
+@define-color bg-alt #1A1A2E;
+@define-color fg #EDF2F4;
+@define-color fg-dim #8D99AE;
+@define-color accent #E5383B;
+@define-color accent-secondary #E76F8B;
+@define-color border #2D2D4A;
+
+window {
+    background-color: @bg;
+    color: @fg;
+    border: 2px solid @accent;
+    border-radius: 12px;
+}
+
+#input {
+    background-color: @bg-alt;
+    color: @fg;
+    border: none;
+    border-bottom: 2px solid @accent;
+    border-radius: 12px 12px 0 0;
+    padding: 10px;
+    margin: 0;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#outer-box {
+    padding: 0;
+}
+
+#text {
+    color: @fg;
+}
+
+#entry {
+    padding: 8px;
+}
+
+#entry:selected {
+    background-color: @border;
+    border-radius: 8px;
+}
+
+#entry:selected #text {
+    color: @accent-secondary;
+    font-weight: bold;
+}

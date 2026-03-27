@@ -1,0 +1,30 @@
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "#0F0F1A"
+foreground = "#EDF2F4"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
+[colors.normal]
+black = "#0F0F1A"
+red = "#E5383B"
+green = "#95D5B2"
+yellow = "#FFD166"
+blue = "#7EC8E3"
+magenta = "#E76F8B"
+cyan = "#A2D2FF"
+white = "#EDF2F4"
+
+[colors.bright]
+black = "#6C7A96"
+red = "#FF6B6B"
+green = "#B7E4CF"
+yellow = "#FF9F1C"
+blue = "#CDB4DB"
+magenta = "#D63384"
+cyan = "#F2ACB9"
+white = "#FFFFFF"
