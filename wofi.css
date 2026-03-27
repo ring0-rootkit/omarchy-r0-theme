@@ -1,54 +1,49 @@
 @define-color bg #0F0F1A;
-@define-color bg-alt #1A1A2E;
 @define-color fg #EDF2F4;
-@define-color fg-dim #8D99AE;
-@define-color accent #E5383B;
-@define-color accent-secondary #E76F8B;
-@define-color border #2D2D4A;
+@define-color gray1 #0F0F1A;
+@define-color gray2 #EDF2F4;
+@define-color gray3 #E5383B;
+@define-color gray4 #E76F8B;
+@define-color gray5 #EDF2F4;
+@define-color fg_bright #FFFFFF;
 
 window {
-    background-color: rgba(15, 15, 26, 0.95);
-    color: @fg;
-    border: 2px solid @accent;
-    border-radius: 12px;
-}
-
-#input {
-    background-color: @bg-alt;
-    color: @fg;
-    border: none;
-    border-bottom: 2px solid @accent;
-    border-radius: 12px 12px 0 0;
-    padding: 10px;
-    margin: 0;
-}
-
-#inner-box {
-    background-color: @bg-alt;
-    border-radius: 0 0 12px 12px;
-}
-
-#outer-box {
     background-color: @bg;
-    padding: 0;
-    border-radius: 12px;
+    border: 2px solid @gray3;
 }
 
-#text {
+input {
+    background-color: @bg;
     color: @fg;
+    border: 1px solid @gray2;
+}
+
+input:selected {
+    background-color: alpha(@gray3, 0.3);
+    color: @fg_bright;
 }
 
 #entry {
-    padding: 8px;
+    color: @fg;
     background-color: @bg;
+    padding: 5px;
+    margin: 2px;
 }
 
 #entry:selected {
-    background-color: @border;
-    border-radius: 8px;
+    background-color: alpha(@gray3, 0.3);
+    color: @fg_bright;
 }
 
-#entry:selected #text {
-    color: @accent-secondary;
-    font-weight: bold;
+scrollbar {
+    background-color: @bg;
+}
+
+scrollbar slider {
+    background-color: @gray2;
+    border-radius: 5px;
+}
+
+scrollbar slider:hover {
+    background-color: @gray3;
 }
