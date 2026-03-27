@@ -18,7 +18,7 @@
 }
 
 window#waybar {
-    background-color: @bg;
+    background-color: rgba(15, 15, 26, 0.95);
     color: @fg;
     border-bottom: 2px solid @accent;
 }
@@ -47,7 +47,7 @@ tooltip {
 
 #workspaces button:hover {
     color: @accent-secondary;
-    background: transparent;
+    background-color: @bg-alt;
 }
 
 #clock,

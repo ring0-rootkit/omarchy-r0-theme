@@ -7,14 +7,15 @@
 @define-color border #2D2D4A;
 
 #window {
-    background-color: @bg;
+    background-color: rgba(15, 15, 26, 0.95);
     color: @fg;
     border: 2px solid @accent;
     border-radius: 12px;
 }
 
 #box {
-    background-color: transparent;
+    background-color: @bg;
+    border-radius: 12px;
 }
 
 #search {
