@@ -1,6 +1,6 @@
-@define-color bg #0F0F1A;
+@define-color background #0F0F1A;
+@define-color foreground #EDF2F4;
 @define-color bg-alt #1A1A2E;
-@define-color fg #EDF2F4;
 @define-color fg-dim #8D99AE;
 @define-color accent #E5383B;
 @define-color accent-secondary #E76F8B;
@@ -11,29 +11,19 @@
 @define-color purple #9B5DE5;
 @define-color border #2D2D4A;
 
-* {
-    font-family: "JetBrains Mono", "Symbols Nerd Font", monospace;
-    font-size: 13px;
-    min-height: 0;
-}
-
 window#waybar {
     background-color: rgba(15, 15, 26, 0.95);
-    color: @fg;
     border-bottom: 2px solid @accent;
 }
 
 tooltip {
     background-color: @bg-alt;
-    color: @fg;
     border: 1px solid @accent;
     border-radius: 8px;
 }
 
 #workspaces button {
     color: @fg-dim;
-    padding: 0 5px;
-    border-bottom: 2px solid transparent;
 }
 
 #workspaces button.active {
@@ -48,19 +38,6 @@ tooltip {
 #workspaces button:hover {
     color: @accent-secondary;
     background-color: @bg-alt;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#network,
-#pulseaudio,
-#tray,
-#backlight,
-#custom-power {
-    padding: 0 10px;
-    color: @fg;
 }
 
 #battery.charging {
@@ -97,5 +74,9 @@ tooltip {
 }
 
 #custom-power {
+    color: @accent;
+}
+
+#custom-screenrecording-indicator.active {
     color: @accent;
 }

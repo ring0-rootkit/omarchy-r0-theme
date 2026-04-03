@@ -12,20 +12,42 @@ window {
     padding: 12px 20px;
 }
 
+window undershoot.top,
+window undershoot.right,
+window undershoot.bottom,
+window undershoot.left,
+window overshoot.top,
+window overshoot.right,
+window overshoot.bottom,
+window overshoot.left {
+    background: none;
+}
+
 progressbar,
 scale trough {
-    background-color: alpha(@fg, 0.1);
+    background-color: alpha(@fg, 0.15);
     border-radius: 999px;
-    min-height: 6px;
+    min-height: 8px;
 }
 
 progressbar progress,
 scale trough highlight {
     background-color: @accent-secondary;
     border-radius: 999px;
-    min-height: 6px;
+    min-height: 8px;
+}
+
+scale slider {
+    background-color: @fg;
+    border-radius: 999px;
+    min-height: 8px;
+    min-width: 8px;
 }
 
 image {
     color: @accent;
+}
+
+label {
+    color: @fg;
 }
