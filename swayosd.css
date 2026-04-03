@@ -1,12 +1,12 @@
-@define-color bg #1A1A2E;
-@define-color fg #EDF2F4;
+@define-color background-color #1A1A2E;
+@define-color foreground-color #EDF2F4;
 @define-color accent #E5383B;
 @define-color accent-secondary #E76F8B;
 @define-color muted #6C7A96;
 
 window {
-    background-color: @bg;
-    color: @fg;
+    background-color: @background-color;
+    color: @foreground-color;
     border: 2px solid @accent;
     border-radius: 12px;
     padding: 12px 20px;
@@ -25,7 +25,7 @@ window overshoot.left {
 
 progressbar,
 scale trough {
-    background-color: alpha(@fg, 0.15);
+    background-color: alpha(@foreground-color, 0.15);
     border-radius: 999px;
     min-height: 8px;
 }
@@ -38,7 +38,7 @@ scale trough highlight {
 }
 
 scale slider {
-    background-color: @fg;
+    background-color: @foreground-color;
     border-radius: 999px;
     min-height: 8px;
     min-width: 8px;
@@ -49,5 +49,5 @@ image {
 }
 
 label {
-    color: @fg;
+    color: @foreground-color;
 }
