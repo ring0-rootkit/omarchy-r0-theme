@@ -1,11 +1,11 @@
-@define-color background #1A1A2E;
+@define-color background-color #1A1A2E;
 @define-color foreground #EDF2F4;
 @define-color accent #E5383B;
 @define-color accent-secondary #E76F8B;
 @define-color muted #6C7A96;
 
 window {
-    background: @background;
+    background: @background-color;
     color: @foreground;
     border: 2px solid @accent;
     border-radius: 12px;
